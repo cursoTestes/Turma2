@@ -14,7 +14,7 @@ namespace TesteVendas
             decimal venda = 100;
             decimal comissao_esperada = 5;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }
@@ -24,7 +24,7 @@ namespace TesteVendas
             decimal venda = 10000;
             decimal comissao_esperada = 500;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }
@@ -34,7 +34,7 @@ namespace TesteVendas
             decimal venda = 10;
             decimal comissao_esperada = 0.5m;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }
@@ -44,7 +44,7 @@ namespace TesteVendas
             decimal venda = 100000;
             decimal comissao_esperada = 6000;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }
@@ -54,7 +54,7 @@ namespace TesteVendas
             decimal venda = 10001;
             decimal comissao_esperada = 600.06m;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }
@@ -64,7 +64,7 @@ namespace TesteVendas
             decimal venda = 55.59m;
             decimal comissao_esperada = 2.77m;
 
-            decimal comissao = CalculadoraComissao.Calcula(venda);
+            decimal comissao = new CalculadoraComissao().Calcula(venda);
 
             Assert.AreEqual(comissao_esperada, comissao);
         }

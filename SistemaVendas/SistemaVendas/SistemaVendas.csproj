@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculadoraComissao.cs" />
+    <Compile Include="CalculadoraRoyalties.cs" />
+    <Compile Include="IVendasRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

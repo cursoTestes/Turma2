@@ -7,7 +7,7 @@ namespace SistemaVendas
 {
     public class CalculadoraComissao
     {
-        public static decimal Calcula(decimal venda)
+        public virtual decimal Calcula(decimal venda)
         {
             decimal comissao;
 
